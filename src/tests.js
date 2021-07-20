@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 const knex = require('knex')(require('../knexfile.js')['development']);
+// knex.migrate.latest(['development']);
+// knex.seed
 
 router.get('/', function(req, res, next) {
     knex.select().table('tests')
