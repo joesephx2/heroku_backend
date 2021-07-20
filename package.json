@@ -5,7 +5,7 @@
   "main": "./src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx knex migrate:latest && npx knex seed:run wait && node ./src/app.js"
+    "start": "npx knex migrate:latest && npx knex seed:run && node ./src/app.js"
   },
   "keywords": [],
   "author": "",
